@@ -50,8 +50,8 @@ function App() {
             path="/create/*"
             element={
               <MicrofrontendLoader
-                cssUrl="http://localhost:3000/microfrontend-project.css"
-                scriptUrl="http://localhost:3000/microfrontend-bundle.js"
+                cssUrl="https://mf-component-bundle.vercel.app/microfrontend-project.css"
+                scriptUrl="https://mf-component-bundle.vercel.app/microfrontend-bundle.js"
                 mountDivId="microfrontend-root"
                 globalVarName="MyMicrofrontendComponent"
                 propsToPass={{
