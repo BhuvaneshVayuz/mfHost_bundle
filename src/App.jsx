@@ -5,6 +5,8 @@ import MicrofrontendLoader from './MicrofrontendLoader';
 import ReactDOM from 'react-dom/client';
 import Home from './pages/Home';
 import * as MaterialUI from '@mui/material';
+import About from './pages/About';
+import Services from './pages/Services';
 
 
 const Details = () => (
@@ -37,6 +39,8 @@ function App() {
             <Link to="/" className='text-white'>Home</Link>
             <Link to="/details" className='text-white'>Details</Link>
             <Link to="/create" className='text-white'>Create</Link>
+            <Link to="/about" className='text-white'>About</Link>
+            <Link to="/services" className='text-white'>Services</Link>
             <Button variant="contained" color="primary" onClick={handleButtonClickNav}>
               Click Me (MUI)
             </Button>
@@ -46,6 +50,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/details" element={<Details />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+
           <Route
             path="/create/*"
             element={
